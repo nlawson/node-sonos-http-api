@@ -719,6 +719,10 @@ The following endpoints are available:
 # Apple Music
 /RoomName/applemusic/{now,next,queue}/song:{songID}
 /RoomName/applemusic/{now,next,queue}/album:{albumID}
+
+# SoundCloud
+/RoomName/soundcloud/{now,next,queue}/song:{songID}
+/RoomName/soundcloud/{now,next,queue}/album:{albumID}
 ```
 
 You can find Apple Music song and album IDs via the [iTunes Search
@@ -778,7 +782,7 @@ The following endpoint is available:
 ```
 /RoomName/musicsearch/{service}/{type}/{search term}
 
-Service options: apple, spotify, deezer, elite, library
+Service options: apple, spotify, soundcloud, deezer, elite, library
 
 Type options for apple, spotify, deezer, and elite: album, song, station 
 Station plays a Pandora like artist radio station for a specified artist name. 
@@ -794,7 +798,7 @@ Search terms for album for all services: artist name, album title, artist name +
 
 Search terms for station for apple: artist name, song title, artist name + song title
 Search terms for station for spotify and deezer: artist name
-Search terms for station for library: not supported
+Search terms for station for soundclouud and library: not supported
 
 Specifying just an artist name will load the queue with up to 50 of the artist's most popular songs
 Specifying a song title or artist + song title will insert the closest match to the song into 
@@ -805,10 +809,13 @@ Examples:
 /Den/musicsearch/spotify/song/red+hot+chili+peppers
 /Kitchen/musicsearch/apple/song/dark+necessities
 /Playroom/musicsearch/library/song/red+hot+chili+peppers+dark+necessities
+/Den/musicsearch/soundcloud/song/innerbloom
+/Den/musicsearch/soundcloud/song/artist:eric+prydz (Plays first 50 results in search for eric prydz)
 
 /Den/musicsearch/spotify/album/abbey+road
 /Playroom/musicsearch/library/album/red+hot+chili+peppers+the+getaway
 /Kitchen/musicsearch/spotify/album/dark+necessities
+/Kitchen/musicsearch/soundcloud/album/brainsugar
 
 /Den/musicsearch/spotify/station/red+hot+chili+peppers
 /Kitchen/musicsearch/apple/station/dark+necessities  (Only Apple Music supports song titles)
