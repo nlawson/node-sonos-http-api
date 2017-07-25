@@ -715,10 +715,10 @@ adjust crossover frequency in hz. Official values are 50 through 110 in incremen
 `/TV%20Room/sub/polarity/1`
 Switch "placement adjustment" or more commonly known as phase. 0 = 0°, 1 = 180°
 
-Spotify and Apple Music (Experimental)
+Spotify, SoundCloud, and Apple Music (Experimental)
 ----------------------
 
-Allows you to perform your own external searches for Apple Music or Spotify songs or albums and play a specified song or track ID. The Music Search funtionality outlined further below performs a search of its own and plays the specified music.
+Allows you to perform your own external searches for Apple Music, SoundCloud, or Spotify songs or albums and play a specified song or track ID. The Music Search funtionality outlined further below performs a search of its own and plays the specified music.
 
 The following endpoints are available:
 
@@ -810,7 +810,7 @@ Search terms for album for all services: artist name, album title, artist name +
 
 Search terms for station for apple: artist name, song title, artist name + song title
 Search terms for station for spotify and deezer: artist name
-Search terms for station for soundclouud and library: not supported
+Search terms for station for soundcloud and library: not supported
 
 Specifying just an artist name will load the queue with up to 50 of the artist's most popular songs
 Specifying a song title or artist + song title will insert the closest match to the song into
